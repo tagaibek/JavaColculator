@@ -8,14 +8,20 @@ public class Arina2 {
 
     public static void main(String[] args) {
         Arina arina = new Arina();
+        // раздели на два класса ArabicNumber и RomanNumber/ давай классам логическое назвние 
         String [] actions = {"+","-","/","*" };
         String []redactions = {"\\+","-","/","\\*"};
         Scanner scn= new Scanner(System.in);
         System.out.print("ведите слово ");
         String scan = scn.nextLine();
+        // максимум 3 символ для нашей задчи 
+        // не больше 10
+        // 4 логическких оперции 
+        // еще много чего 
         // здесь определяем орифметические задание
         int aktIndex =-1;
         for (int i = 0; i < actions.length; i++) {
+            // а что если scan = 11 +/-* 5?
             if (scan.contains(actions[i])){
                 aktIndex = i;
                 break;
